@@ -2,42 +2,158 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Orthopediabogota – Dr. Arturo Corchuelo</title>
-  <meta name="description" content="Orthopedic & Knee Surgery in Bogotá led by Dr. Arturo Corchuelo. International patients program, accredited hospitals, guided recovery, and fixed pricing." />
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Orthopediabogota — Dr. Arturo Corchuelo</title>
+  <meta name="description" content="Orthopedic & Knee Surgery in Bogotá led by Dr. Arturo Corchuelo. International patients program, accredited hospitals, fixed quotes, and guided recovery." />
+  <!-- Favicon / Apple Touch muy livianos en SVG -->
+  <link rel="icon" type="image/svg+xml" href='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="%23004B8D"/><stop offset="100%" stop-color="%231AAE9F"/></linearGradient></defs><rect width="64" height="64" rx="12" fill="url(%23g)"/><circle cx="40" cy="18" r="6" fill="white"/></svg>'/>
+  <link rel="apple-touch-icon" sizes="180x180" href='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="%23004B8D"/><stop offset="100%" stop-color="%231AAE9F"/></linearGradient></defs><rect x="8" y="8" width="164" height="164" rx="36" fill="url(%23g)"/><circle cx="120" cy="54" r="18" fill="white"/></svg>'/>
+  <!-- Estilos -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="header">
-    <img src="logo.png" alt="Dr. Arturo Corchuelo Logo" class="logo" />
-    <nav>
-      <a href="#">Dr. Arturo Corchuelo</a>
-      <a href="#">Orthopedic & Knee Surgery</a>
-      <a href="#">Services</a>
-      <a href="#">How it works</a>
-      <a href="#">Pricing</a>
-      <a href="#" class="btn">Free consult</a>
-    </nav>
+  <!-- HEADER -->
+  <header>
+    <div style="max-width:1120px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:16px;">
+      <a href="#home" style="display:flex;align-items:center;gap:12px;color:inherit;text-decoration:none">
+        <svg width="44" height="44" viewBox="0 0 64 64" aria-label="Logo" style="border-radius:8px">
+          <defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#004B8D"/><stop offset="100%" stop-color="#1AAE9F"/></linearGradient></defs>
+          <rect width="64" height="64" rx="12" fill="url(#g1)"/>
+          <circle cx="40" cy="18" r="6" fill="#fff"/>
+        </svg>
+        <div>
+          <div style="font-weight:700;line-height:1">Dr. Arturo Corchuelo</div>
+          <div style="font-size:12px;opacity:.9">Orthopedic & Knee Surgery</div>
+        </div>
+      </a>
+      <nav>
+        <a href="#services">Services</a>
+        <a href="#process">How it works</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact" class="btn">Free consult</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section class="hero">
-      <h1>World-class orthopedic surgery in Bogotá</h1>
-      <p>International patient program led by <strong>Dr. Arturo Corchuelo</strong>. Accredited hospitals, fixed quotes, and guided recovery.</p>
-      <div class="buttons">
-        <a href="#" class="btn-primary">Book free video consult</a>
-        <a href="#" class="btn-secondary">Explore procedures</a>
+  <main id="home">
+    <!-- HERO -->
+    <section style="padding-top:2.5rem">
+      <div class="container grid grid-2" style="align-items:center">
+        <div>
+          <h1>World-class orthopedic surgery in Bogotá</h1>
+          <p class="lead">
+            International patient program led by <strong>Dr. Arturo Corchuelo</strong>.
+            Accredited hospitals, fixed quotes, and guided recovery.
+          </p>
+          <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:18px">
+            <a href="#contact" class="btn">Book free video consult</a>
+            <a href="#services" class="btn btn-outline">Explore procedures</a>
+          </div>
+        </div>
+        <div>
+          <div class="hero-showcase">
+            <svg viewBox="0 0 256 256" style="width:100%;max-width:520px;">
+              <defs><linearGradient id="g2" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0%" stop-color="#004B8D"/><stop offset="100%" stop-color="#1AAE9F"/></linearGradient></defs>
+              <rect x="16" y="16" width="224" height="224" rx="36" fill="url(#g2)"/>
+              <circle cx="168" cy="70" r="18" fill="#fff"/>
+              <path d="M72 176c24-44 48-68 82-34 8 8 20 36 26 50h-34c-6-12-12-26-18-32-16-8-30 12-38 32H72z" fill="#fff" opacity=".94"/>
+            </svg>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="info">
-      <h2>Why choose us?</h2>
-      <p>We offer expert orthopedic care, transparent pricing, and comprehensive recovery plans for international patients.</p>
+    <!-- SERVICES -->
+    <section id="services" class="soft">
+      <div class="container grid grid-3">
+        <div class="card">
+          <div class="card-title">Total knee replacement</div>
+          <div class="card-text">Modern implants & fast-track rehab (7–10 days).</div>
+        </div>
+        <div class="card">
+          <div class="card-title">Total hip replacement</div>
+          <div class="card-text">Posterior/anterior approach as indicated.</div>
+        </div>
+        <div class="card">
+          <div class="card-title">ACL & shoulder arthroscopy</div>
+          <div class="card-text">Minimally invasive with return-to-sport plan.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section id="process">
+      <div class="container grid grid-5">
+        <div class="step"><div class="k">1. Intake</div><div>Questionnaire + imaging upload.</div></div>
+        <div class="step"><div class="k">2. Video consult</div><div>Plan & implant options.</div></div>
+        <div class="step"><div class="k">3. Fixed quote</div><div>Transparent package price.</div></div>
+        <div class="step"><div class="k">4. Surgery</div><div>Accredited hospital, bilingual team.</div></div>
+        <div class="step"><div class="k">5. Recovery</div><div>Physio + tele-follow-ups.</div></div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing" class="soft">
+      <div class="container grid grid-3">
+        <div class="card">
+          <div class="card-title big">Knee replacement</div>
+          <div class="price">US$15k–18k</div>
+          <ul class="list">
+            <li>Surgeon + anesthesiologist</li>
+            <li>Implants & OR fees</li>
+            <li>7–10 nights hospital/hotel</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="card-title big">Hip replacement</div>
+          <div class="price">US$15k–19k</div>
+          <ul class="list">
+            <li>Surgeon + anesthesiologist</li>
+            <li>Implants & OR fees</li>
+            <li>7–10 nights hospital/hotel</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="card-title big">Arthroscopy (ACL/shoulder)</div>
+          <div class="price">US$6k–9k</div>
+          <ul class="list">
+            <li>Surgeon + anesthesiologist</li>
+            <li>OR & materials</li>
+            <li>2–4 nights hotel</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2>Book your free video consult</h2>
+        <form class="grid form" method="post" action="https://formspree.io/f/your-form-id">
+          <input name="name" placeholder="Full name" required />
+          <input name="email" type="email" placeholder="Email" required />
+          <input name="phone" placeholder="Phone / WhatsApp" />
+          <select name="procedure">
+            <option>Procedure of interest</option>
+            <option>Knee replacement</option>
+            <option>Hip replacement</option>
+            <option>Shoulder arthroscopy</option>
+            <option>ACL reconstruction</option>
+            <option>Other / second opinion</option>
+          </select>
+          <textarea name="history" placeholder="Brief medical history / goals"></textarea>
+          <button type="submit" class="submit">Send</button>
+        </form>
+      </div>
     </section>
   </main>
 
+  <!-- FOOTER -->
   <footer>
-    <p>© 2025 Dr. Arturo Corchuelo. All rights reserved.</p>
+    © <span id="y"></span> Orthopediabogota. All rights reserved.
   </footer>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
 </body>
 </html>
