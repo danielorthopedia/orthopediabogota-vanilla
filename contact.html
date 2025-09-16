@@ -1,21 +1,21 @@
-<img src="logo.png" alt="Dr. Arturo Corchuelo — Orthopedic & Knee Surgery" style="height:44px;width:auto;border-radius:6px;display:block">
-<section id="contact" style="background:#0048BD;color:#fff">
-      <div style="max-width:1120px;margin:0 auto;padding:0 16px">
-                <form style="display:grid;gap:12px;max-width:960px" method="post" action="https://formspree.io/f/your-form-id">
-          <input name="name" placeholder="Full name" required />
-          <input name="email" type="email" placeholder="Email" required />
-          <input name="phone" placeholder="Phone / WhatsApp" />
-          <select name="procedure">
-            <option>Procedure of interest</option>
-            <option>Knee replacement</option>
-            <option>Hip replacement</option>
-            <option>Shoulder arthroscopy</option>
-            <option>ACL reconstruction</option>
-            <option>Other / second opinion</option>
-          </select>
-          <textarea name="history" placeholder="Brief medical history / goals"></textarea>
-          <button type="submit" style="background:#1AAE9F;border:none;color:#0b1020;padding:12px 18px;border-radius:12px;font-weight:700;cursor:pointer">Send</button>
-        </form>
-      </div>
-    </section>
-  </main>
+<form class="grid form" method="POST" action="https://formspree.io/f/xxxxxxyz">
+  <input name="name" placeholder="Full name" required>
+  <input name="email" type="email" placeholder="Email" required>
+  <input name="phone" placeholder="Phone / WhatsApp">
+  <select name="procedure">
+    <option>Procedure of interest</option>
+    <option>Knee replacement</option>
+    <option>Hip replacement</option>
+    <option>Shoulder arthroscopy</option>
+    <option>ACL reconstruction</option>
+    <option>Other / second opinion</option>
+  </select>
+  <textarea name="history" placeholder="Brief medical history / goals"></textarea>
+
+  <!-- Opcional: campos útiles -->
+  <input type="hidden" name="_subject" value="New inquiry — Orthopediabogota">
+  <input type="text" name="_gotcha" style="display:none"> <!-- honeypot anti-spam -->
+  <input type="hidden" name="_redirect" value="https://orthopediabogota.com/thank-you.html">
+
+  <button type="submit" class="submit">Send</button>
+</form>
