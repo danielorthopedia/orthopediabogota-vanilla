@@ -135,27 +135,36 @@
     </section>
 
     <!-- CONTACT -->
-    <section id="contact" style="background:#0048BD;color:#fff">
-      <div style="max-width:1120px;margin:0 auto;padding:0 16px">
-        <h2 style="margin:0 0 16px">Book your free video consult</h2>
-        <form style="display:grid;gap:12px;max-width:960px" method="post" action="https://formspree.io/f/xrbavdld">
-          <input name="name" placeholder="Full name" required />
-          <input name="email" type="email" placeholder="Email" required />
-          <input name="phone" placeholder="Phone / WhatsApp" />
-          <select name="procedure">
-            <option>Procedure of interest</option>
-            <option>Knee replacement</option>
-            <option>Hip replacement</option>
-            <option>Shoulder arthroscopy</option>
-            <option>ACL reconstruction</option>
-            <option>Other / second opinion</option>
-          </select>
-          <textarea name="history" placeholder="Brief medical history / goals"></textarea>
-          <button type="submit" style="background:#1AAE9F;border:none;color:#0b1020;padding:12px 18px;border-radius:12px;font-weight:700;cursor:pointer">Send</button>
-        </form>
-      </div>
-    </section>
-  </main>
+<form class="grid form"
+      method="POST"
+      action="https://formsubmit.co/daniel@orthopediabogota.com"
+      accept-charset="UTF-8">
+
+  <input name="name" placeholder="Full name" required />
+  <input name="email" type="email" placeholder="Email" required />
+  <input name="phone" placeholder="Phone / WhatsApp" />
+
+  <select name="procedure" required>
+    <option value="">Procedure of interest</option>
+    <option>Knee replacement</option>
+    <option>Hip replacement</option>
+    <option>Shoulder arthroscopy</option>
+    <option>ACL reconstruction</option>
+    <option>Other / second opinion</option>
+  </select>
+
+  <textarea name="history" placeholder="Brief medical history / goals"></textarea>
+
+  <!-- Opcionales / utilidades -->
+  <input type="hidden" name="_subject" value="New inquiry — Orthopediabogota" />
+  <input type="hidden" name="_next"    value="https://orthopediabogota.com/thank-you.html" />
+  <input type="hidden" name="_captcha" value="false" />
+  <!-- Honeypot anti-spam (no lo borres) -->
+  <input type="text" name="_honey" style="display:none">
+
+  <button type="submit" class="submit">Send</button>
+</form>
+
 
   <!-- FOOTER -->
   <footer style="background:#0048BD;color:#fff;text-align:center;padding:16px">
